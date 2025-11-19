@@ -2,26 +2,26 @@
 
 This repository contains an analysis of **MOOC (Massive Open Online Course) User Action Data**. The analysis focuses on understanding user behavior, engagement patterns, and interactions within the course platform to extract insights that can inform course improvements and personalized learning strategies.
 
-📄 **Paper:** [MOOC User Action Data Analysis](https://arxiv.org/pdf/1403.6652)  
-📂 **GitHub Repository:** [MOOC User Action Data Analysis](https://github.com/prajwaldevaraj-2001/MOOC-User-Action-Data-Analysis)
+**Paper:** [MOOC User Action Data Analysis](https://arxiv.org/pdf/1403.6652)  
+**GitHub Repository:** [MOOC User Action Data Analysis](https://github.com/prajwaldevaraj-2001/MOOC-User-Action-Data-Analysis)
 
 ---
 
-## 🚀 Overview
+## Overview
 
 The dataset contains user interactions with various online courses. The goal of the analysis is to uncover patterns in how users engage with content, and whether these interactions can predict user outcomes such as course completion or dropout.
 
-### 🔹 Key Objectives:
+### Key Objectives:
 - **Understand user activity**: Investigate patterns of clicks, views, and interactions within the course platform.
 - **Analyze engagement**: Identify the relationship between engagement and course completion.
 - **Predict outcomes**: Build models to predict user behavior, like completion likelihood or dropout probability.
 
 ---
 
-## 🛠️ Implementation Details
+## Implementation Details
 
-## 📌 Technologies Used
-- **Python** 🐍
+## Technologies Used
+- **Python** 
 - **Pandas** – Data manipulation
 - **Matplotlib/Seaborn** – Data visualization
 - **Scikit-learn** – Machine learning models for predictions
@@ -30,22 +30,22 @@ The dataset contains user interactions with various online courses. The goal of 
 
 ---
 
-## ⚙️ Installation & Setup
-🔹 1. Clone the Repository
+## Installation & Setup
+1. Clone the Repository
 git clone https://github.com/prajwaldevaraj-2001/MOOC-User-Action-Data-Analysis.git</br>
 cd MOOC-User-Action-Data-Analysis</br>
 
-🔹 2. Install Dependencies</br>
+2. Install Dependencies</br>
 pip install -r requirements.txt
 
-## 🔧 Usage
-📌 Step 1: Data Cleaning
+## Usage
+Step 1: Data Cleaning
 The initial step involves cleaning and preprocessing the raw data. You can explore this in the data_cleaning.ipynb notebook:</br>
 import pandas as pd</br>
 data = pd.read_csv('data/raw_data.csv')</br>
 Perform data cleaning (handle missing values, etc.)</br>
 
-📌 Step 2: Exploratory Data Analysis (EDA)</br>
+Step 2: Exploratory Data Analysis (EDA)</br>
 Next, you can explore the data to understand patterns and trends in user activity:</br>
 import matplotlib.pyplot as plt</br>
 import seaborn as sns</br>
@@ -53,7 +53,7 @@ Visualize the distribution of user interactions</br>
 sns.histplot(data['user_activity'])</br>
 plt.show()</br>
 
-📌 Step 3: Predictive Modeling</br>
+Step 3: Predictive Modeling</br>
 To predict user outcomes, you can build machine learning models:</br>
 from sklearn.model_selection import train_test_split</br>
 from sklearn.ensemble import RandomForestClassifier</br>
@@ -67,7 +67,7 @@ model.fit(X_train, y_train)</br>
 Evaluate the model</br>
 model.score(X_test, y_test)</br>
 
-📌 Step 4: Visualize Results</br>
+Step 4: Visualize Results</br>
 Use visualizations to communicate insights and predictions:</br>
 Plot confusion matrix or ROC curve</br>
 from sklearn.metrics import confusion_matrix</br>
@@ -76,19 +76,19 @@ conf_matrix = confusion_matrix(y_test, y_pred)</br>
 sns.heatmap(conf_matrix, annot=True)</br>
 plt.show()</br>
 
-## 📊 Key Insights & Analysis
+## Key Insights & Analysis
 - User Engagement: Higher engagement is correlated with a greater likelihood of course completion.
 - Dropout Prediction: Predicting dropout based on early interactions can help target interventions.
 - Content Interaction: Some course sections show higher interaction rates, suggesting they are more engaging.
 
-## 🚀 Future Improvements
-- ✅ Improve prediction models by incorporating more features such as time spent on each section or completion rates per module.
-- ✅ Use deep learning models (e.g., RNNs) to model sequential data for predicting user behavior over time.
-- ✅ Integrate recommendation systems to personalize course content based on user activity.
+## Future Improvements
+- Improve prediction models by incorporating more features such as time spent on each section or completion rates per module.
+- Use deep learning models (e.g., RNNs) to model sequential data for predicting user behavior over time.
+- Integrate recommendation systems to personalize course content based on user activity.
 
-## 📂 Project Structure
+## Project Structure
 
-```plaintext
+```
 MOOC-User-Action-Data-Analysis/
 │
 ├── analysis_notebooks/            # Jupyter notebooks for analysis and visualizations
@@ -103,3 +103,7 @@ MOOC-User-Action-Data-Analysis/
 ├── requirements.txt               # Python dependencies
 ├── README.md                      # Documentation
 └── utils.py                       # Utility functions for data processing and analysis
+```
+
+### Developed by
+**Prajwal Devaraj**
